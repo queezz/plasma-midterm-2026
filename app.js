@@ -36,9 +36,10 @@
     $('page').hidden = false;
     $('again').hidden = false;
     $('door').hidden = true;
-    document.title = `Topic ${topic.n} · ${topic.title.replace(/<[^>]+>/g, '')}`;
+    document.title = topic.n ? `Topic ${topic.n} · ${topic.title.replace(/<[^>]+>/g, '')}`
+                             : `${topic.title} · Plasma Physics`;
     history.replaceState(null, '', '#' + words.replace(/ /g, '-'));
-    remember(words);
+    if (topic.n) remember(words);   // the test page (n = 0) is not kept for the next visit
     window.scrollTo(0, 0);
   }
 

@@ -37,9 +37,11 @@ The first deployment takes a minute or two; the **Actions** tab shows "pages bui
 ## 4. Check it
 
 1. Open the address. You should see only "Your midterm topic" and a box for two words.
-2. Type one pair from the course's `Grading/2026/midterm-keys.json`, or from the topic server's CSV export. Its topic
+2. Type `every flavour beans`. The test page, "The site works", should open. These three words open nothing else, so
+   they may be shared; `test` in the course's `Studio/work/midterm-site/site.json` sets them.
+3. Type one pair from the course's `Grading/2026/midterm-keys.json`, or from the topic server's CSV export. Its topic
    page should open.
-3. Type two wrong words. The page should say "No topic opens with these words".
+4. Type two wrong words. The page should say "No topic opens with these words".
 
 ## Later updates
 
